@@ -4,7 +4,7 @@
 
 Many spatial domain methods describe the neighbourhood of a cell by its mean gene expression. CoSMIM describes it by the gene–gene covariance of the neighbourhood at several spatial scales (the cell and its 5, 15 and 45 nearest neighbours). The scales are fused with weights learned for each section, the fused matrix is shrunk towards a scaled identity, and the matrix square root is used as a Euclidean feature. Standard PCA and Leiden clustering of this feature give the spatial domains; nothing is trained.
 
-![Overview of CoSMIM](figures/fig1/fig1.png)
+![Overview of CoSMIM](https://raw.githubusercontent.com/barondu/cosmim/main/figures/fig1/fig1.png)
 
 Fig. 1: Overview of CoSMIM.
 
@@ -69,15 +69,15 @@ adata_raw.obs["cosmim"] = cosmim.run_leiden_partition(features, resolution=1.0, 
 
 | Notebook                                                                     | Data                                                                             | What it shows                                                   |
 | ---------------------------------------------------------------------------- | -------------------------------------------------------------------------------- | --------------------------------------------------------------- |
-| [1_dataset4_STARmap](notebooks/1_dataset4_STARmap.ipynb)                     | dataset4, STARmap mouse visual cortex, 1 section             | CoSMIM step by step and the nine metrics                        |
-| [2_dataset1_MERFISH_benchmark](notebooks/2_dataset1_MERFISH_benchmark.ipynb) | dataset1, MERFISH mouse hypothalamus, 5 sections          | CoSMIM on the five sections, the benchmark of sixteen methods and its statistical tests, gene–gene correlations across domains |
-| [3_dataset6_StereoSeq](notebooks/3_dataset6_StereoSeq.ipynb)                     | dataset6, Stereo-seq mouse embryo E10.5_E1S1 and E10.5_E2S1 | the liver and the brain found by each method, and the niche covariance of the liver |
+| [1_dataset4_STARmap](https://github.com/barondu/cosmim/blob/main/notebooks/1_dataset4_STARmap.ipynb)                     | dataset4, STARmap mouse visual cortex, 1 section             | CoSMIM step by step and the nine metrics                        |
+| [2_dataset1_MERFISH_benchmark](https://github.com/barondu/cosmim/blob/main/notebooks/2_dataset1_MERFISH_benchmark.ipynb) | dataset1, MERFISH mouse hypothalamus, 5 sections          | CoSMIM on the five sections, the benchmark of sixteen methods and its statistical tests, gene–gene correlations across domains |
+| [3_dataset6_StereoSeq](https://github.com/barondu/cosmim/blob/main/notebooks/3_dataset6_StereoSeq.ipynb)                     | dataset6, Stereo-seq mouse embryo E10.5_E1S1 and E10.5_E2S1 | the liver and the brain found by each method, and the niche covariance of the liver |
 
 The notebooks were run with the versions in `environment.yml` on Linux (aarch64). On other machines and library builds a few cells can change cluster, so the scores can differ from the paper.
 
 ## Benchmark
 
-![Benchmark of 16 methods](figures/fig2/fig2.png)
+![Benchmark of 16 methods](https://raw.githubusercontent.com/barondu/cosmim/main/figures/fig2/fig2.png)
 
 Fig. 2: Benchmarking of 16 spatial domain identification methods on six datasets (22 sections). Sixteen methods on dataset1–6, scored with eight metrics. CoSMIM has the highest overall score (summed rank 121 of 128; the second method has 106). Tutorial 2 computes the ranks and the statistical tests from the per-section scores.
 
@@ -111,4 +111,4 @@ The preprint is on bioRxiv (the link will be added here):
 
 ## License
 
-The code is under the BSD 3-Clause License (see [LICENSE](LICENSE)). The data files keep the terms of their sources listed above; the figures are those of the paper.
+The code is under the BSD 3-Clause License (see [LICENSE](https://github.com/barondu/cosmim/blob/main/LICENSE)). The data files keep the terms of their sources listed above; the figures are those of the paper.
