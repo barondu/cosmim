@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.ipynb_checkpoints/
+.DS_Store
+
+# data downloaded by the notebooks; only the dataset4 section is part of the repository
+data/**/*.h5ad
+data/**/*.csv
+!data/D4_STARmap_VisualCortex/STARmap_20180505_BY3_1k.h5ad
+
+# full reconstructions of the paper figures, kept out of the repository
+notebooks/*_allpanels.ipynb
+notebooks/2_dataset1_MERFISH_benchmark_allpanels.ipynb

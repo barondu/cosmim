@@ -1,0 +1,22 @@
+# The versions the paper's results were computed with (Python 3.12 on aarch64).
+# conda env create -f environment.yml && conda activate cosmim && pip install -e .
+name: cosmim
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12.10
+  - pip
+  - pip:
+      - numpy==2.3.5
+      - scipy==1.16.3
+      - scikit-learn==1.7.2
+      - scanpy==1.11.5
+      - anndata==0.12.6
+      - igraph==0.11.9
+      - umap-learn==0.5.9.post2
+      - numba==0.62.1
+      - pandas==2.3.3
+      - matplotlib==3.10.6
+      - h5py==3.15.1
+      - squidpy==1.8.1
+      - jupyterlab
