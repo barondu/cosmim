@@ -97,7 +97,7 @@ The seven datasets of the paper. Datasets 1–6 are those distributed with SDMBe
 
 ## Citation
 
-The preprint is on bioRxiv (the link will be added here):
+The preprint is on bioRxiv: <https://doi.org/10.64898/2026.10.20.760373>
 
 ```bibtex
 @article{du2026cosmim,
@@ -105,7 +105,7 @@ The preprint is on bioRxiv (the link will be added here):
   author  = {Du, Bairui and Kiryu, Hisanori},
   journal = {bioRxiv},
   year    = {2026},
-  doi     = {10.1101/XXXX.XX.XX.XXXXXX}
+  doi     = {10.64898/2026.10.20.760373}
 }
 ```
 
