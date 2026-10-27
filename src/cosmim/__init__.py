@@ -9,6 +9,6 @@ from .niche_covariance import apply_regularization, build_knn_index, compute_cos
 from .pipeline import run
 from .preprocess import compute_svg, preprocess_sample_spatial, select_hvg_spatial, spatial_preprocess_pipeline
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 __all__ = ["preprocess_sample_spatial", "compute_svg", "select_hvg_spatial", "spatial_preprocess_pipeline", "build_knn_index", "compute_multiscale_covariance", "apply_regularization", "optimize_weights", "compute_cosmim", "eigh_sqrt", "eigh_logm", "feature", "to_tril", "from_tril", "find_resolution", "run_leiden_partition", "get_num_groups", "calc_ari", "calc_nmi", "calc_hom", "calc_com", "calc_chaos", "calc_pas", "calc_asw", "calc_moranI_gearyC", "calc_all_metrics", "run"]

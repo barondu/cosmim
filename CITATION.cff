@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use CoSMIM, please cite the preprint below."
 type: software
 title: "CoSMIM: multi-scale niche covariance for training-free spatial domain identification"
-version: 1.0.0
+version: 1.0.1
 license: BSD-3-Clause
 repository-code: "https://github.com/barondu/cosmim"
 abstract: "CoSMIM describes the neighbourhood of a cell by the gene–gene covariance of the neighbourhood at several spatial scales. The scales are fused with weights learned for each section, the fused matrix is shrunk towards a scaled identity, and its matrix square root is clustered with PCA and Leiden to give the spatial domains; nothing is trained."
