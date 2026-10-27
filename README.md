@@ -11,14 +11,14 @@ Fig. 1: Overview of CoSMIM.
 ## Install
 
 ```bash
-git clone https://github.com/barondu/cosmim.git
-cd cosmim
-pip install -e ".[metrics]"     # [metrics] adds squidpy, needed for Moran's I and Geary's C
+pip install "cosmim[metrics]"   # [metrics] adds squidpy, needed for Moran's I and Geary's C
 ```
 
 To use the package versions the paper's results were computed with:
 
 ```bash
+git clone https://github.com/barondu/cosmim.git
+cd cosmim
 conda env create -f environment.yml
 conda activate cosmim
 pip install -e .
